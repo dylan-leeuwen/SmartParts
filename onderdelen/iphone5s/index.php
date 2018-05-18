@@ -89,7 +89,7 @@ $result2 = $conn->query($sql2);
       <div class='card-content'>
         <div class='top-bar'>
           <span style="font-family: roadway;">&euro;<?php echo $row["prijs"]?></span>
-					<?php if ($row["stock"] > 1){ ?>
+					<?php if ($row["stock"] > 0){ ?>
           <span style=" color:#06CB21;" class='float-right lnr lnr-checkmark-circle'></span>
 				<?php } else {?>
 					<span style=" color:red;" class='float-right lnr lnr-cross-circle'></span>

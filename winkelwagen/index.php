@@ -69,6 +69,7 @@ $result2 = $conn->query($sql2);
         <div style="margin-top: 60px;" class="witvlak">
             <p style="margin-left: 25px; top: 20px; position: relative;"><b><span class="lnr lnr-cart"></span>Winkelmandje</b></p>
 						<?php
+                        $verzendkosten = 0;
                         $subprijs= 0;
                         if(isset($_SESSION['producten'])){
                             $stack = $_SESSION['producten'];
@@ -82,7 +83,7 @@ $result2 = $conn->query($sql2);
 						?>
             <div>
                 <p style="display: inline-block;margin-left: 25px; font-size: 17px; margin-top: 30px;"><b><?php echo $row["naam"]?></b></p>
-                <p style="font-family: Roboto;display: inline-block; font-size: 15px; float: right; right: 20px; position: relative; top: 35px"><b>&euro;<?php echo $row["prijs"]." "?></b><a style="color: red; text-decoration: none;" href="#"><span class="lnr lnr-cross-circle"></span></a></p>
+                <p style="font-family: Roboto;display: inline-block; font-size: 15px; float: right; right: 20px; position: relative; top: 35px"><b>&euro;<?php echo $row["prijs"]." "?></b><a style="color: red; text-decoration: none;" href="servers/removefromcart.php?id=<?php echo $row["product_id"] ?>"><span class="lnr lnr-cross-circle"></span></a></p>
                 <p style="margin-left: 25px; font-size: 15px; margin-top: -15px; max-width: 55%;"><?php echo $row["omschrijving"]?></p>
                 <hr width="90%;" style=" border: 1px solid #f1f1f1;">
             </div>

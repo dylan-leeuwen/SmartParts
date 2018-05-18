@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "socks";
+$password = "Roottoor123";
+$dbname = "smartparts";
 ?>
