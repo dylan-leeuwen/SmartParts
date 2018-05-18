@@ -1,0 +1,202 @@
+@font-face {
+    font-family: cantata;
+    src: url(../../fonts/CantataOne-Regular.ttf);
+}
+@font-face {
+    font-family: MarcellusSC-Regular;
+    src: url(../../fonts/MarcellusSC-Regular.ttf);
+}
+@font-face {
+    font-family: GeosansLight;
+    src: url(../../fonts/GeosansLight.ttf);
+}
+@font-face {
+    font-family: BloggerSans;
+    src: url(../../fonts/BloggerSans.otf);
+}
+.method {
+    margin-left: 25%;
+}
+.midden {
+  width: 70%;
+  margin-left: 15%;
+}
+.midden .icons {
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: 5px;
+}
+.midden .icons hr {
+    width: 80px;
+    border: 0.6px solid #4285f4;
+    display: inline-block;
+    position: relative;
+    top: 2.5px;
+}
+.midden .icons span, .midden .icons p {
+    display: inline-block;
+    color: #4285f4;
+}
+.midden .icons p {
+    position: relative;
+    top: -2px;
+    font-family: GeosansLight;
+}
+.checkout {
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 96%;
+    margin-left: 2%;
+    background-color: #f1f1f1;
+    padding-bottom: 450px;
+}
+.checkout .details, .checkout .bdetails {
+    width: 49.8%;
+    vertical-align:top;
+}
+.checkout .details p, .checkout .bdetails p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 25%;
+    font-family: GeosansLight;
+}
+.bdetails input[type=submit].pay {
+    transition: all .2s ease-in-out;
+    background-color: white;
+    border: 1px solid #4285f4;
+    border-radius: 10px 10px 0px 10px;
+    font-family: GeosansLight;
+    box-shadow: 1px 1px 1px grey;
+    color: black;
+    padding: 5px 20px;
+}
+.bdetails input[type=submit].pay:hover {
+    transition: all .2s ease-in-out;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    border-radius: 10px 10px 0px 10px;
+    font-family: GeosansLight;
+    box-shadow: 1px 1px 1px grey;
+    color: white;
+    padding: 5px 20px;
+}
+.bdetails input[type=submit].cancel {
+    transition: all .2s ease-in-out;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 10px 10px 10px 0px;
+    font-family: GeosansLight;
+    box-shadow: 1px 1px 1px grey;
+    color: black;
+    padding: 5px 20px;
+}
+.bdetails input[type=submit].cancel:hover {
+    transition: all .2s ease-in-out;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 10px 10px 10px 0px;
+    font-family: GeosansLight;
+    box-shadow: 1px 1px 1px grey;
+    color: white;
+    padding: 5px 20px;
+}
+.checkout .details input[type=text] {
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+    box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+    border-radius: 3px;
+    border: 1px solid #E3E3E3;
+    padding: 2px 5px;
+    font-size: 20px;
+    margin-left: 25%;
+    font-family: GeosansLight;
+    position: relative;
+    top: -18px;
+    width: 50%;
+}
+..checkout .details input[type=text]:select {
+    border: 1px solid #4285f4;
+}
+.checkout .details input[type="radio"] {
+    padding: 20px;
+}
+.witvlak {
+    border-radius: 3px;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 20px;
+    display: block;
+}
+@media only screen and (max-width: 900px) {
+    .midden .icons {
+        display: none;
+    }
+    .details {
+        float: left;
+    }
+    .midden img {
+        margin-left: calc(50% - 100px);
+}
+}
+@media only screen and (max-width: 620px) {
+    .midden .icons hr {
+    width: 10%;
+}
+    .midden .icons {
+        font-size: 10px;
+        float: left;
+        widows: 150%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .midden .icons {
+        display: none;
+    }
+    .details {
+        margin-top: -20px;
+    }
+    .checkout {
+        border-radius: 5px;
+        margin-top: 25px;
+        width: 96%;
+        margin-left: 2%;
+        background-color: #f1f1f1;
+        padding-bottom: 50px;
+    }
+    .checkout .details {
+        width: 100%;
+    }
+    .checkout .bdetails {
+        width: 100%;
+    }
+    .checkout .details p {
+        margin-top: 0px;
+        font-size: 20px;
+        margin-left: 10%;
+        font-family: GeosansLight;
+    }
+    .checkout .details input[type=text] {
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+        box-shadow: 1px 1px 2px 0px rgba(230,230,230,1);
+        border-radius: 3px;
+        border: 1px solid #E3E3E3;
+        padding: 2px 5px;
+        font-size: 20px;
+        margin-left: 10%;
+        font-family: GeosansLight;
+        position: relative;
+        top: -18px;
+        width: 80%;
+    }
+    .details .title {
+        text-align: center;
+        position: relative;
+        left: -5    %;
+    }
+    .method {
+        margin-left: 10%;
+    }
+}

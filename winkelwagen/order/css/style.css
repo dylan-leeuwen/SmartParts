@@ -1,0 +1,194 @@
+@font-face {
+    font-family: cantata;
+    src: url(../../../fonts/CantataOne-Regular.ttf);
+}
+@font-face {
+    font-family: MarcellusSC-Regular;
+    src: url(../../../fonts/MarcellusSC-Regular.ttf);
+}
+@font-face {
+    font-family: GeosansLight;
+    src: url(../../../fonts/GeosansLight.ttf);
+}
+@font-face {
+    font-family: BloggerSans;
+    src: url(../../../fonts/BloggerSans.otf);
+}
+.paybutton {
+  position: relative;
+  background-color: #044476;
+  color: white;
+  padding: 10px 0px;
+  width: 100%;
+  left: -0.75px;
+  top: 0.75px;
+  text-align: center;
+  display: block;
+  border: 1px solid #044476;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.paybutton:hover {
+  color: #044476;
+  background-color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.blank {
+}
+.blank ul li {
+  display: inline-block;
+  padding-top: 15px;
+}
+.blank ul li a {
+  color: black;
+  font-size: 20px;
+  font-family: GeosansLight;
+  margin-left: 20px;
+  position: relative;
+  left: -20px;
+  text-decoration: none;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+}
+.header {
+  text-align: center;
+}
+.header .navbar {
+  width: 100%;
+  background-color: #eee;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.34%;
+  grid-template-areas:
+  'links midden rechts';
+}
+.navbar .icons {
+  grid-area: rechts;
+  text-align: right;
+  position: relative;
+  padding-right: 25px;
+  padding-top: 30px;
+}
+.navbar .icons .number {
+  top: -18px;
+  font-size: 8px;
+  position: relative;
+  left: -12px;
+  border: 1px solid #044476;
+  padding: 1.5px 4.5px 1.5px 4.9px;
+  border-radius: 50%;
+  font-family: BloggerSans;
+  opacity: 1;
+  color: white;
+  background-color: #044476;
+}
+.navbar .logo {
+  position: relative;
+  grid-area: midden;
+}
+.navbar .logo a img {
+  position: relative;
+  top: 5px;
+}
+.navbar .blank {
+  grid-area: links;
+}
+.hamburger12 {
+  grid-area: ham;
+}
+.midden {
+  font-family: BloggerSans;
+  background-color: white;
+  margin-top: -21.5px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.midden .inputfield {
+  display: inline-block;
+  margin-left: 5%;
+  position: relative;
+  left: -2.5%;
+  width: 25%;
+  min-width: 300px;
+  text-align: center;
+  border: 0.5px solid #044476;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  top: -20px;
+}
+.midden .inputfield .input {
+  position: relative;
+  top: 15px;
+  margin-top: -15px;
+}
+.midden .inputfield .input p {
+  text-align: left;
+  margin-left: 15%;
+}
+.midden .inputfield .input input {
+  font-family: BloggerSans;
+  font-size: 15px;
+  width: calc(70% - 10px);
+  position: relative;
+  top: -10px;
+  border: 0.75px solid black;
+  padding: 2px 5px;
+}
+.tabel:not(:nth-last-child(2)) {
+  border-bottom: 0.5px solid black;
+}
+.totaleprijsdiv {
+  position: relative;
+  left: 0.1px;
+}
+.totaleprijsdiv div {
+  position: relative;
+  top: 10px;
+  line-height: 5px;
+}
+.totaleprijsdiv p {
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+  .shoppingcart {
+    display: none;
+  }
+  .blank {
+    display: none;
+  }
+  .header .navbar {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.34%;
+    grid-template-areas:
+    'ham midden rechts';
+  }
+}
+@media only screen and (max-width: 500px) {
+  .blank {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .logo {
+    width: 100vw;
+    text-align: center;
+  }
+  .header .navbar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'midden';
+  }
+}
+@media only screen and (min-width: 801px) {
+  .hamburger12 {
+    display: none;
+  }
+}

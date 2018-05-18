@@ -1,0 +1,89 @@
+.shoppingcart {
+  width: 260px;
+  border: 1px solid #044476;
+  position: absolute;
+  right: 30px;
+  top: 70px;
+  border-radius: 10px;
+  font-family: BloggerSans;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+}
+.shoppingcart .top {
+  padding: 10px 0px 1px 0px;;
+  background-color: #044476;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 9px;
+}
+.shoppingcart .top h1 {
+
+  width: 100%;
+  font-size: 15px;
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+}
+
+.shoppingcart .shoppingproduct {
+
+  font-size: 7px;
+}
+.product {
+  display: grid;
+  grid-template-areas:
+  'foto titel titel'
+  'foto ptag1 ptag2';
+  width: 80%;
+  margin-left: 10%;
+}
+.product:not(:last-child) {
+  border-bottom: 0.8px solid #044476;
+}
+.shoppingcart .shoppingproduct img {
+  grid-area: foto;
+  margin-left: 10px;
+}
+.shoppingcart .shoppingproduct h1{
+  text-shadow: 0.5px 0.5px 1px black;
+  position: relative;
+  left: 20px;
+  width: 180px;
+  font-size: 20px;
+
+  grid-area: titel;
+}
+.shoppingcart .shoppingproduct .first{
+  position: relative;
+  left: 20px;
+  top: -13px;
+  font-size: 10px;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-family: BloggerSans;
+  grid-area: ptag1;
+}
+.shoppingcart .shoppingproduct .second{
+  position: relative;
+  top: -13px;
+  font-size: 10px;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-family: BloggerSans;
+  grid-area: ptag2;
+}
+.buttons {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-top: -3px;
+  background-color: #044476;
+}
+.buttons a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  position: relative;
+  left: -20px;
+  font-size: 15px;
+}

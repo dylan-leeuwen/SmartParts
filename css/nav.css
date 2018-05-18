@@ -1,0 +1,132 @@
+
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/*Basic style*/
+/*menu style*/
+.navcont{
+	background-color: #4285f4;
+	width:100%;
+	margin:10px auto 0px auto;
+	height:45px;
+	text-align: center;
+}
+
+.nav {
+	height: 45px;
+	background: transparent url(https://s17.postimg.org/fx9ricp0v/shadow.png) center bottom no-repeat;
+	padding-bottom: 7px;
+    margin-bottom: 23px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
+.nav ul {
+	margin:0;
+	box-shadow: 0px 1px 2px -2px rgba(0, 0, 0, 0.4);
+
+}
+
+.nav ul li {
+	font: 13px Verdana, 'Lucida Grande';
+	cursor: pointer;
+	-webkit-transition: padding .05s linear;
+	-moz-transition: padding .05s linear;
+	-ms-transition: padding .05s linear;
+	-o-transition: padding .05s linear;
+	transition: padding .05s linear;
+	background: transparent url(https://s10.postimg.org/lx6xn2cdx/border.png) left center no-repeat;
+}
+.nav li:first-child
+{
+background:none;
+}
+.nav ul li.drop {
+	position: relative;
+}
+.nav ul > li {
+	display: inline-block;
+}
+.nav ul li a {
+	line-height: 45px;
+	padding: 0 20px;
+	height: 45px;
+	color: white;
+	font-size: 15px;
+}
+.nav ul li a:hover {
+	color:#777;
+}
+.dropdownContain {
+	width: 200px;
+	position: absolute;
+	z-index: 2;
+	top: -400px;
+}
+.dropOut {
+	width: 200px;
+	background: white;
+	float: left;
+	position: relative;
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
+.dropOut ul {
+	float: left;
+	padding: 0 0;
+}
+.dropOut ul li {
+	text-align: left;
+	background: transparent url(https://s15.postimg.org/p6rvo45l3/dropborder.png) center top repeat-x;
+	float: left;
+	width: 155px;
+	padding: 12px 0 10px 15px;
+	margin: 0px 15px;
+	color: #777;
+}
+.dropOut li:first-child
+{
+background:none;
+}
+
+.dropOut ul li:hover {
+	color:#09F;
+	-webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+ul li:hover a { color:#09F;
+	-webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+ }
+ul li:hover .dropdownContain { top: 45px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+/*menu style*/
